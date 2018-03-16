@@ -2,7 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import { InfoCardComponent } from './info-card/info-card.component';
-import {MatCardModule, MatIconModule} from '@angular/material';
+import {MatCardModule, MatDividerModule, MatIconModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
@@ -15,7 +15,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
         BrowserModule,
         MatIconModule,
         BrowserAnimationsModule,
-        MatCardModule
+        MatCardModule,
+        MatDividerModule
     ],
     providers: [],
     bootstrap: [AppComponent]

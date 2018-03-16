@@ -1,0 +1,69 @@
+
+.card{
+  padding: 16px;
+  cursor: pointer;
+}
+.count{
+  font-size: 21px;
+  color: #455a64;
+  line-height: 32px;
+}
+.desc{
+  color: #99abb4;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+}
+.icon{
+  mat-icon{
+    font-size: 30px;
+    padding: 15px;
+    height: 60px;
+    width: 60px;
+    border-radius: 2000px;
+    color: #fff;
+  }
+}
+
+.open{
+  position: fixed;
+  width: 60%;
+  height: 80%;
+  top: 10%;
+  left: 20%;
+  z-index: 200;
+}
+.blocker{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(227, 227, 227, 0.6);
+  z-index: 100;
+}
+
+@media (max-width: 575.98px) {
+  .open{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 200;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .open{
+    position: fixed;
+    width: 94%;
+    height: 94%;
+    top: 3%;
+    left: 3%;
+    z-index: 200;
+  }
+}
+
+
+
