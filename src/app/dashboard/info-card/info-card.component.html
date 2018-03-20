@@ -1,7 +1,6 @@
-<mat-card class="card container" (click)="switch()" [ngClass]="{'open': open}">
+<mat-card class="card container">
     <div class="row d-flex flex-row">
-        <div class="icon col-4" [ngClass]="{'col-4': !open}"
-             [ngStyle]="{'margin-left.px': 20 * open, 'margin-bottom.px': 15 * open}">
+        <div class="icon col-4">
             <mat-icon [ngStyle]="{'background': color}">{{iconName}}</mat-icon>
         </div>
         <div class="text d-flex flex-column justify-content-center align-items-start col-8">
@@ -9,8 +8,4 @@
             <div class="desc">{{text}}</div>
         </div>
     </div>
-    <div class="row" *ngIf="open">
-        <mat-divider></mat-divider>
-    </div>
 </mat-card>
-<div [ngClass]="{'blocker': open}"></div>
